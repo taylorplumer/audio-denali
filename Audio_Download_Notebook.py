@@ -37,6 +37,12 @@ def download_audio(addresses):
 
 
 if __name__ == '__main__':
+    try:
+        os.makedirs('Audio')
+    except OSError as e:
+        if e.errno != errno.EEXIST:
+            raise
+            
     url = 'http://www.alaska.org/guide/denali-park-guide'
     
     soup = convert_to_soup(url)
