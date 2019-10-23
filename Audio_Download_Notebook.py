@@ -1,16 +1,7 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 # Import required modules
 import requests
 from bs4 import BeautifulSoup
 import urllib.request
-
-# Create a variable with the url
-url = 'http://www.alaska.org/guide/denali-park-guide'
 
 
 def convert_to_soup(url):
